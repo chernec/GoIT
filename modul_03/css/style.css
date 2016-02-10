@@ -1,5 +1,5 @@
-*{
-	background-color: f9f9f9;
+body{
+	background-color: #f9f9f9;
 }
 
 .container{
@@ -20,8 +20,6 @@
 	font: regular 11pt 'Open Sans';
 	width: 966px;
 	height: 40px;
-	/*border: 1px solid #625e00;*/
-	/*border-width: 1px 0;*/
 	background: black url(../img/blockdefault.png) center center repeat-x;
 }
 
@@ -34,7 +32,6 @@
 	color: white;
 	padding: 11px 25px;
 	text-decoration: none;
-	/*border-right: 1px solid white;*/
 }
 
 .solidblockmenu li a:visited{
@@ -53,7 +50,6 @@
 	margin: 40px 0 0 45px;
 	width: 238px;
 	height: 240px;
-	/*border: 1px solid #c8c8c8;*/
 }
 
 
@@ -118,7 +114,9 @@ li:not(:first-child) {
 	text-decoration: underline;	
 }
 
-.footerMenu p{
-	padding: 11px 10px;
+
+
+ul .lastli{	
+	padding: 11px 25px;
 	float: right;
 }
