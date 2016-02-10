@@ -1,0 +1,124 @@
+*{
+	background-color: f9f9f9;
+}
+
+.container{
+	background-color: #ffffff;
+	width: 1062px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.container img {
+	margin: 50px 0px 0px 50px
+}
+
+.solidblockmenu{
+	margin: 40px 0 0 45px;
+	padding: 0;
+	float: left;
+	font: regular 11pt 'Open Sans';
+	width: 966px;
+	height: 40px;
+	/*border: 1px solid #625e00;*/
+	/*border-width: 1px 0;*/
+	background: black url(../img/blockdefault.png) center center repeat-x;
+}
+
+.solidblockmenu li{
+	display: inline;
+}
+
+.solidblockmenu li a{
+	float: left;
+	color: white;
+	padding: 11px 25px;
+	text-decoration: none;
+	/*border-right: 1px solid white;*/
+}
+
+.solidblockmenu li a:visited{
+	color: white;
+}
+
+.solidblockmenu li a:hover, .solidblockmenu li .current{
+	color: white;
+	margin: 0;
+	height: 18px;
+	background: transparent url(../img/blockactive.png) center center repeat-x;
+}
+
+.leftmenu{
+	float: left;
+	margin: 40px 0 0 45px;
+	width: 238px;
+	height: 240px;
+	/*border: 1px solid #c8c8c8;*/
+}
+
+
+.spisokTovarov li{
+	padding: 15px 0 13px 23px;
+	border: 1px solid #c8c8c8;
+
+}
+
+.spisokTovarov li a{
+	text-decoration: none;
+}
+
+li:not(:first-child) {
+    border-top: 0;
+}
+
+.spisokTovarov li a:visited{
+	color: black;
+}
+
+.spisokTovarov li:hover{
+	background: #f9f9f9;
+	padding: 15px 0 13px 40px;
+}
+
+.content{
+	float: left;
+	margin: 40px 0 0 50px;
+	width: 675px;
+	height: 400px;
+	border: 1px solid #c8c8c8;
+	background: url(../img/velo.png) no-repeat center center;
+}
+
+.content p{
+	margin: 440px 0 0 0;
+	font: 10pt 'Open Sans';
+	line-height: 1.5;
+}
+
+.footerMenu{
+	margin: 760px 0 0px 45px;
+	padding: 0;
+	width: 966px;
+	height: 40px;
+	background: #e1e1e1;
+
+}
+
+.footerMenu li{
+	display: inline;
+}
+
+.footerMenu li a{
+	float: left;
+	color: black;
+	padding: 11px 25px;
+	text-decoration: none;
+}
+.footerMenu a:hover{
+	text-decoration: underline;	
+}
+
+.footerMenu p{
+	padding: 11px 10px;
+	float: right;
+}
