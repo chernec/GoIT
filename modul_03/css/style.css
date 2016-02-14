@@ -114,8 +114,6 @@ li:not(:first-child) {
 	text-decoration: underline;	
 }
 
-
-
 ul .lastli{	
 	padding: 11px 25px;
 	float: right;
