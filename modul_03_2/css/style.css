@@ -32,7 +32,7 @@ nav{
 }
 
 .nav-menu{
-	background: #525151;
+	background: linear-gradient(#5e5e5e,#444343);
 }
 
 .nav-menu__item{
@@ -46,8 +46,10 @@ nav{
 	text-decoration: none;
 }
 
-.nav-menu__item:hover{
-	background: #3c3c3c;
+.nav-menu__link:hover{
+  	background: linear-gradient(#2e2e2e,#4a4a4a);
+  	border-left: 1px solid #838383;
+  	border-right: 1px solid #838383;
 }
 
 article{
@@ -108,6 +110,10 @@ article{
 	color: #2c2c2c;
 	padding: 9px 24px 10px;
 	text-decoration: none;
+}
+
+.footer-menu__link:hover{
+	text-decoration: underline;
 }
 
 .footer-menu__copyright{

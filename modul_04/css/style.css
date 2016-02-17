@@ -1,0 +1,177 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: #0e80a6 url(../img/background.png) repeat-x;
+	/*font: 13px/21px 'Open Sans', sans-serif*/
+}
+
+.container{
+	background: #fff;
+	width: 1000px;
+	margin: 0 auto;
+	/*padding: 11px 32px 0px 28px;*/
+	box-shadow: 0 -5px 5px rgba(0, 0, 0, .3);
+}
+
+.clear-fix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header-right-side{
+	margin: 11px 32px 0 0;
+	float: right;
+}
+
+.logo {
+    display:inline-block;   
+    position:relative;
+    margin: 11px 0 0 28px;
+ 
+}
+.logo__text {
+    display:inline-block;
+    position:absolute;
+    top:100px;   
+    left:72px;
+     
+    /* Оформление текста */
+    color: #128aa7;
+   	font: 12px 'Tahoma', sans-serif;
+}
+
+
+.contact{
+	padding: 0 0 0 200px;
+	color: #128aa7;
+	opacity: 0.8;
+	font: 12px 'Tahoma', sans-serif;
+	
+}
+
+.contact__first-line{
+	margin: 0 0 8px 0;
+	font-weight: bold;
+}
+
+.contact__line{
+	margin: 0 0 8px 0;
+}
+
+.menu-contries{
+	float: right;
+   /* margin-top: 111px;*/
+    font: 10px 'Tahoma', sans-serif;
+}
+
+.menu-contries__item{
+	float: left; /* выстраиваем элементы списка в один ряд */
+   /* margin-right: 15px;  делаем отступ чтобы пункты меню не сливались */
+}
+
+.menu-contries__link{
+	display: block;
+    text-align: center;
+    padding-top: 46px;  /*внутренний остту чтобы текст был вне фона */
+    color: #128aa7;
+    background-position: center top; /* выравниваем фон вверх и по центру */
+    background-repeat: no-repeat;
+    width: 53px;
+}
+
+.india{
+	background-image: url(../img/india.png);
+
+}
+
+.nepal{
+	background-image: url(../img/nepal.png);
+}
+
+.tibet{
+	background-image: url(../img/tibet.png);
+}
+
+.butan{
+	background-image: url(../img/butan.png);
+}
+
+.sri-lanka{
+	background-image: url(../img/sri-lanka.png);
+}
+
+.maldives{
+	background-image: url(../img/maldives.png);
+}
+
+.image {
+  /*height: 237px; смущает вот этот момент – пришлось подгонять размер картинки, чтобы стал виден нижний border */
+  border-top: 1px solid #128aa7;
+  border-bottom: 1px solid #128aa7;
+  position: relative;
+  z-index: 1000;
+  padding: 0;
+}
+
+/*МЕНЮ*/
+
+.menu {
+  height: 28px;
+  background: #373737;
+	background: linear-gradient(to bottom, #373737 0%, #303030 100%);
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid #000;
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.75);
+}
+.menu li {
+  position: relative;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+}
+.menu > li:first-child {
+  padding-left: 40px;
+}
+.menu li a {
+  display: block;
+  position: relative;
+  padding: 0 33px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.menu ul {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+  	left: 23px;
+  	background:#303030;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  	opacity: 0;
+  	transition: all 0.7s;
+}
+.menu li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.menu ul a {
+  padding: 0 10px;
+}
+.menu ul+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  height: 6px;
+  width: 5px;
+  margin-top: -2px;
+  background: url(../img/treuholnyk.png) 0 0 no-repeat;
+}
+.menu li:hover a::after {
+  transform: scale(1, -1)
+}
