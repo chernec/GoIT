@@ -44,6 +44,8 @@ nav{
 	color: #fff;
 	padding: 9px 24px 10px;
 	text-decoration: none;
+	border-left: 1px solid transparent;
+  	border-right: 1px solid transparent;
 }
 
 .nav-menu__link:hover{
@@ -59,7 +61,6 @@ article{
 .left-menu{
 	float: left;
 	width: 238px;
-	height: 240px;
 }
 
 .left-menu__item{

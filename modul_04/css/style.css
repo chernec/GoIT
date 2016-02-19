@@ -1,10 +1,25 @@
-*{
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
 
 body{
 	background: #0e80a6 url(../img/background.png) repeat-x;
-	/*font: 13px/21px 'Open Sans', sans-serif*/
+	font: 400 14px Tahoma, Helvetica, sans-serif;
 }
 
 .container{
@@ -22,14 +37,14 @@ body{
 }
 
 .header-right-side{
-	margin: 11px 32px 0 0;
+	/*margin: 11px 32px 0 0;*/
 	float: right;
 }
 
 .logo {
     display:inline-block;   
     position:relative;
-    margin: 11px 0 0 28px;
+    margin: 9px 0 0 28px;
  
 }
 .logo__text {
@@ -47,6 +62,7 @@ body{
 .contact{
 	padding: 0 0 0 200px;
 	color: #128aa7;
+	margin: 0 0 8px 0;
 	opacity: 0.8;
 	font: 12px 'Tahoma', sans-serif;
 	
@@ -61,54 +77,26 @@ body{
 	margin: 0 0 8px 0;
 }
 
-.menu-contries{
+.countres{
 	float: right;
-   /* margin-top: 111px;*/
-    font: 10px 'Tahoma', sans-serif;
+  	padding: 20px 28px 5px 0;
+  	list-style: none;
+ 	font-size: 10px;
 }
 
-.menu-contries__item{
-	float: left; /* выстраиваем элементы списка в один ряд */
-   /* margin-right: 15px;  делаем отступ чтобы пункты меню не сливались */
-}
-
-.menu-contries__link{
+.countres__item{
 	display: block;
-    text-align: center;
-    padding-top: 46px;  /*внутренний остту чтобы текст был вне фона */
-    color: #128aa7;
-    background-position: center top; /* выравниваем фон вверх и по центру */
-    background-repeat: no-repeat;
-    width: 53px;
+	width: 56px;
+	float: left;
+	text-align: center;
 }
 
-.india{
-	background-image: url(../img/india.png);
-
+.countres__link:hover{
+  text-decoration: none;
 }
 
-.nepal{
-	background-image: url(../img/nepal.png);
-}
-
-.tibet{
-	background-image: url(../img/tibet.png);
-}
-
-.butan{
-	background-image: url(../img/butan.png);
-}
-
-.sri-lanka{
-	background-image: url(../img/sri-lanka.png);
-}
-
-.maldives{
-	background-image: url(../img/maldives.png);
-}
 
 .image {
-  /*height: 237px; смущает вот этот момент – пришлось подгонять размер картинки, чтобы стал виден нижний border */
   border-top: 1px solid #128aa7;
   border-bottom: 1px solid #128aa7;
   position: relative;
@@ -116,62 +104,71 @@ body{
   padding: 0;
 }
 
-/*МЕНЮ*/
+/*menu*/
 
-.menu {
-  height: 28px;
-  background: #373737;
-	background: linear-gradient(to bottom, #373737 0%, #303030 100%);
+.top-nav {
+height: 28px;
   border-top: 1px solid #cacbcb;
   border-bottom: 1px solid #000;
-  box-shadow: 0 0 10px 0px rgba(0,0,0,0.75);
+  background: #343434;
 }
+
 .menu li {
   position: relative;
+  width: 14.2857%;
   float: left;
-  list-style: none;
-  cursor: pointer;
 }
-.menu > li:first-child {
-  padding-left: 40px;
-}
-.menu li a {
+
+.menu a {
   display: block;
-  position: relative;
-  padding: 0 33px;
-  line-height: 28px;
-  font-size: 14px;
+  font: 400 14px/28px Tahoma, sans-serif;
+  text-align: center;
   color: #fff;
-  text-decoration: none;
 }
-.menu ul {
-	visibility: hidden;
-	position: absolute;
-	top: 100%;
-  	left: 23px;
-  	background:#303030;
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-  	opacity: 0;
-  	transition: all 0.7s;
-}
-.menu li:hover ul {
-  visibility: visible;
-  opacity: 1;
-}
-.menu ul a {
-  padding: 0 10px;
-}
-.menu ul+a::after {
-  content: '';
-  display: block;
+
+.dropdown-menu>a:after {
   position: absolute;
-  top: 50%;
-  right: 15px;
-  height: 6px;
-  width: 5px;
-  margin-top: -2px;
-  background: url(../img/treuholnyk.png) 0 0 no-repeat;
+  top: 12px;
+  right: 20px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: " ";
+  border: 2px solid transparent;
+  border-top: 6px solid #fff;
 }
-.menu li:hover a::after {
-  transform: scale(1, -1)
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+  background: #343434;
+    
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  -o-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+
+.dropdown-menu:hover>.submenu {
+  display: block;
+}
+
+.submenu li {
+  float: none;
+  width: auto;
+}
+
+.submenu a {
+  display: block;
+  padding: 0 10px;
+  text-align: left;
+  color: #fff;
+}
+
+.submenu a:hover {
+  padding-left: 15px;
 }
