@@ -17,7 +17,8 @@ header .phones{
 	margin: 6px 0 0 7px;
 	float: left;
 	color: #5e696d;
-	font: 18px Arial, sans-serif;
+	font: 125% Arial, sans-serif;
+	letter-spacing: -0.6px;
 	text-indent: 26px;
 }
 header .phones:before{
@@ -26,7 +27,7 @@ header .phones:before{
 	position: absolute;
 	width: 22px;
 	height: 21px;
-	background: url(../images/icons.png) no-repeat;
+	background: url(../img/icons.png) no-repeat;
 }
 header .navi{
 	width: 77px;
@@ -44,7 +45,7 @@ header .navi a{
 	width: 14px;
 	height: 10px;
 	margin-left: 7px;
-	background: url(../images/icons.png) -38px -5px no-repeat;
+	background: url(../img/icons.png) -38px -5px no-repeat;
 }
 header .navi a.map{
 	background-position: -58px -6px;
@@ -70,7 +71,7 @@ header .login:before{
 	left: 7px;
 	width: 14px;
 	height: 18px;
-	background: url(../images/icons.png) -24px -1px no-repeat;
+	background: url(../img/icons.png) -24px -1px no-repeat;
 }
 header .login form{
 	display: inline-block;
@@ -102,7 +103,7 @@ header .login .registration{
 	text-decoration: none;
 }
 header .login .remind_pass{
-	margin-left: 7px;
+	margin-left: 14px;
 	color: #bfbfbf;
 	font-size: 12px;
 }
@@ -111,7 +112,7 @@ header .banner{
 	width: 909px;
 	height: 237px;
 	margin: 10px 0 6px;
-	background: url(../images/banner.jpg) no-repeat;
+	background: url(../img/banner.jpg) no-repeat;
 }
 header .banner a{
 	position: absolute;
@@ -129,7 +130,7 @@ header nav{
 header nav ul{
 	list-style: none;
 	font-size: 0;
-	margin-left: 124px;
+	margin-left: 129px;
 	padding: 3px 0;
 }
 header nav ul li{
@@ -143,6 +144,18 @@ header nav ul li a{
 	text-transform: uppercase;
 	text-decoration: none;
 }
+header nav ul li:nth-child(2) a{
+	padding: 0 15px 0 17px;
+}
+header nav ul li:nth-child(3) a{
+	padding: 0 13px;
+}
+header nav ul li:nth-child(4) a{
+	padding: 0 15px;
+}
+header nav ul li:last-child a{
+	padding: 0 11px;
+}
 header nav ul li a:hover{
 	color: white;
 	background: linear-gradient(to bottom,#1f6787,#0c3357);
@@ -151,7 +164,7 @@ header nav ul li a:hover{
 header nav .basket{
 	float: right;
 	position: relative;
-	margin-right: 17px;
+	margin-right: 14px;
 	color: #929b9f;
 	font: 11px/32px Arial, sans-serif;
 }
@@ -163,9 +176,15 @@ header nav .basket:before{
 	display: inline-block;
 	width: 21px;
 	height: 17px;
-	background: url(../images/icons.png) -59px -27px no-repeat;
+	background: url(../img/icons.png) -59px -27px no-repeat;
 }
-header nav .basket span{
+header nav .basket .product{
+	margin: 0 13px 0 5px;
+}
+header nav .basket .sum .blue{
+	margin-left: 9px;
+}
+header nav .basket .blue{
 	color: #0d5a8f;
 	font: 12px/32px Arial, sans-serif;
 }
@@ -186,6 +205,22 @@ header nav .basket span{
 	border-left: 2px solid #949494;
 	font-size: 10px;
 }
+.search .by_car form .left select:nth-child(2),
+.search .by_car form .right select:nth-child(2){
+	width: 103px;
+}
+.search .by_car form .left select:nth-child(5),
+.search .by_car form .right select:nth-child(5){
+	width: 103px;
+}
+.search .by_car form .left select:nth-child(8),
+.search .by_car form .right select:nth-child(8){
+	width: 59px;
+}
+.search .by_car form .left select:nth-child(11),
+.search .by_car form .right select:nth-child(11){
+	width: 103px;
+}
 .search>div{
 	float: left;
 	border: 1px solid #b6b6b7;
@@ -195,9 +230,10 @@ header nav .basket span{
 .search .by_car{
 	position: relative;
 	width: 415px;
-	margin-right: 14px;
+	margin: 0 14px 0 4px;
 }
 .search .by_car>p{
+	margin: -2px 0 0 -8px;
 	color: #154467;
 	font: 12px 'Arial Black', sans-serif;
 	text-align: center;
@@ -209,20 +245,20 @@ header nav .basket span{
 }
 .search .by_car>span:first-child{
 	top: 3px;
-	left: 23px;
+	left: 21px;
 }
 .search .by_car>span:nth-child(2){
-	right: 23px;
+	right: 21px;
 }
 .search .by_car .left{
 	float: left;
-	width: 147px;
-	margin: 2px 0 0 19px;
+	width: 181px;
+	margin: 4px 0 0 19px;
 }
 .search .by_car .right{
 	float: right;
-	width: 117px;
-	margin-right: 13px;
+	width: 181px;
+	margin: 3px 10px 0 0;
 }
 .search .by_car .left span,
 .search .by_car .right span,
@@ -233,29 +269,25 @@ header nav .basket span{
 }
 .search .by_car .left>span:first-child,
 .search .by_car .right>span:first-child{
-	margin-right: 24px;
+	margin-right: 19px;
 }
 .search .by_car .left>span:nth-child(4),
 .search .by_car .right>span:nth-child(4){
-	margin-right: 30px;
+	margin-right: 24px;
 }
 .search .by_car .left>span:nth-child(7),
 .search .by_car .right>span:nth-child(7){
-	margin-right: 18px;
+	margin-right: 13px;
 }
 .search .by_car .left>span:nth-child(10),
 .search .by_car .right>span:nth-child(10){
-	margin-right: 4px;
+	margin-right: -1px;
 }
 .search .by_car .left span.gray8,
 .search .by_car .right span.gray8,
 .search .by_disk span.gray8{
 	color: #77858b;
 	font: 8px Arial, sans-serif;
-}
-.search .by_car .left span.black10,
-.search .by_car .right span.black10{
-	margin-bottom: -4px;
 }
 .search .by_car form input[type="button"]{
 	display: block;
@@ -275,19 +307,36 @@ header nav .basket span{
 	margin-right: 10px;
 }
 .search .by_tire>p{
-	margin: 1px 0 9px 10px;
+	margin: -2px 0 9px 10px;
 	color: #114165;
 	font: 12px 'Arial Black', sans-serif;
 }
 .search .by_tire form{
 	margin-left: 14px;
 }
+.search .by_tire form select:nth-child(2){
+	width: 51px;
+}
+.search .by_tire form select:nth-child(4){
+	width: 55px;
+}
+.search .by_tire form select:nth-child(7){
+	width: 46px;
+}
 .search .by_tire form span{
 	color: black;
 	font: 10px 'Lucida Sans Unicode', sans-serif;
 }
+.search .by_tire form span:first-child{
+	margin-right: 3px;
+}
 .search .by_tire form span:nth-child(6){
-	margin-left: 32px;
+	margin: 0 3px 0 32px;
+}
+.search .by_tire form span:nth-child(9){
+	margin-right: 6px;
+	display: inline-block;
+	margin-top: 6px;
 }
 .search .by_tire form input[type="checkbox"]{
 	width: 10px;
@@ -295,7 +344,7 @@ header nav .basket span{
 }
 .search .by_tire form input[type="checkbox"]:nth-child(12),
 .search .by_tire form input[type="checkbox"]:nth-child(14){
-	margin-left: 37px;
+	margin-left: 43px;
 }
 .search .by_tire form label{
 	margin-right: 78px;
@@ -314,32 +363,58 @@ header nav .basket span{
 }
 .search .by_disk{
 	width: 268px;
+	position: relative;
+}
+.search .by_disk select{
+	position: absolute;
 }
 .search .by_disk span{
+	display: inline-block;
+	color: black;
+	font: 11px Arial, sans-serif;
 	line-height: 13px;
 }
-.search .by_disk .left span:nth-child(5){
-	margin-right: 13px;
+.search .by_disk .left select:nth-child(3){
+	width: 57px;
+	top: 19px;
+	left: 105px;
 }
-.search .by_disk .left span:nth-child(8){
-	margin-right: 19px;
+.search .by_disk .left select:nth-child(6){
+	width: 50px;
+	top: 50px;
+	left: 105px;
+}
+.search .by_disk .left select:nth-child(9){
+	width: 57px;
+	top: 82px;
+	left: 105px;
+}
+.search .by_disk .right select:nth-child(3){
+	width: 57px;
+	top: 42px;
+	left: 187px;
+}
+.search .by_disk .right select:nth-child(7){
+	width: 59px;
+	top: 87px;
+	left: 186px;
 }
 .search .by_disk .left{
 	float: left;
 	width: 150px;
 	margin-left: 15px;
 }
+.search .by_disk p{
+	margin: -1px 0 2px -7px;
+	color: #114165;
+	font: 13px 'Arial Black', sans-serif;
+}
 .search .by_disk .right{
 	float: right;
 	width: 75px;
 	padding-left: 9px;
-	margin: 3px 19px 0 0;
+	margin: 3px 16px 0 0;
 	border-left: 1px solid #bdc6ca;
-}
-.search .by_disk p{
-	margin: 1px 0 4px;
-	color: #114165;
-	font: 12px 'Arial Black', sans-serif;
 }
 .search .by_disk form input[type="button"]{
 	margin: -1px 20px 9px 0;
@@ -356,46 +431,68 @@ header nav .basket span{
 .catalog>p, .brand>p{
 	position: relative;
 	border: 1px solid #8b979c;
-	margin-bottom: 13px;
-	padding-left: 26px;
 	border-radius: 27px;
 	text-transform: uppercase;
 	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+}
+.catalog>p{
+	color: #114165;
+	font: 13px/27px "Lucida Sans Unicode", Arial, sans-serif;
+	margin: 3px 0 11px 0;
+	padding-left: 26px;
+}
+.brand>p{
+	color: #0c3256;
+	font: 14px/27px "Lucida Sans Unicode", Arial, sans-serif;
+	margin: 1px 0 12px 0;
+	padding-left: 29px;
 }
 .catalog>p:before, .brand>p:before{
 	content: '';
 	display: block;
 	position: absolute;
-	top: 3px;
-	left: 3px;
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: url(../images/icons.png) -2px -25px no-repeat, linear-gradient(to bottom, #1f6786, #0c3357);
+	background: url(../img/icons.png) -2px -25px no-repeat, linear-gradient(to bottom, #1f6786, #0c3357);
 }
-.catalog>p{
-	color: #114165;
-	font: 13px/27px "Lucida Sans Unicode", Arial, sans-serif;
-}
-.brand>p{
-	color: #0c3256;
-	font: 14px/27px "Lucida Sans Unicode", Arial, sans-serif;
+.catalog>p:before{
+	top: 4px;
+	left: 2px;
+} 
+.brand>p:before{
+	top: 4px;
+	left: 4px;
 }
 .catalog .sections p,
 .brand form p{
 	position: relative;
-	margin: 1px 31px 8px 0;
-	padding-left: 32px;
+	margin: 1px 31px 2px 0;
+	padding-left: 30px;
 	border: 1px solid #79878d;
 	border-radius: 28px;
+	color: #114165;
+	font: 14px "Lucida Sans Unicode", Arial, sans-serif;
 	line-height: 28px;
 	text-transform: uppercase;
 }
+.catalog .sections p:nth-child(6){
+	margin: -2px 31px 2px 0;
+}
+.catalog .sections p:nth-child(11){
+	margin: -3px 31px 2px 0;
+}
 .brand form p{
-	margin: 0 32px 5px 15px;
+	margin: 5px 32px 4px 15px;
+}
+.brand form p:nth-child(8){
+	margin-bottom: 6px;
 }
 .brand form input[type="checkbox"]{
-	margin: 0 7px 14px 26px;
+	margin: 0 7px 11px 26px;
+}
+.brand form p:nth-child(8)~input[type="checkbox"]{
+	margin: 0 7px 11px 26px;
 }
 .brand form label{
 	margin-right: 70px;
@@ -403,7 +500,7 @@ header nav .basket span{
 	font: 13px "Lucida Sans Unicode", Arial, sans-serif;
 }
 .brand form input[type="button"]{
-	margin-left: 26px;
+	margin: 12px 0 0 25px;
 	padding: 0 14px;
 	border: none;
 	border-radius: 25px;
@@ -419,16 +516,19 @@ header nav .basket span{
 	display: block;
 	position: absolute;
 	top: 2px;
-	left: 5px;
+	left: 3px;
 	width: 13px;
 	height: 13px;
 	border: 5px solid #114165;
 	border-radius: 50%;
 }
+.brand form p:nth-child(8):before{
+	left: 1px;
+}
 .catalog .sections a{
 	position: relative;
 	display: inline-block;
-	margin: 0 0 3px 46px;
+	margin: 0 0 6px 46px;
 	color: #465961;
 	font: 13px "Lucida Sans Unicode", Arial, sans-serif;
 	text-decoration: none;
@@ -443,14 +543,14 @@ header nav .basket span{
 	display: block;
 	position: absolute;
 	top: 5px;
-	left: -12px;
+	left: -10px;
 	width: 4px;
 	height: 4px;
 	border: 2px solid #79878d;
 	border-radius: 50%;
 }
 .catalog .sections a:hover{
-	margin-bottom: 6px;
+	margin-bottom: 9px;
 	color: #0c3256;
 	font: italic bold 14px Arial, sans-serif;
 	text-decoration: underline;
@@ -465,7 +565,7 @@ header nav .basket span{
 }
 .content section{
 	margin: 0 192px 0 192px;
-	padding: 16px 29px 28px 22px;
+	padding: 19px 0px 28px 22px;
 	background: linear-gradient(to bottom, #e5e7e8, #93a7b0);
 	border-radius: 3px;
 }
@@ -475,97 +575,112 @@ header nav .basket span{
 	height: 0;
 	clear: both;
 }
-.content section>div{
+.content section>.catalog-list-04{
 	float: left;
-	width: 138px;
-	margin-left: 29px;
-}
-.content section>div:first-child{
-	margin-left: 0;
-}
-.content section div div{
+	/*width: 138px;*/
+	margin-left: 0px;
+	}
+
+	.catalog-list-04 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+	.catalog-list-04 li {
+	display: inline-block;
+	width: 150px;
+	min-width: 100px;
+	max-width: 300px;
+	}
+
+.white{
+	width: 137px;
+	height: 127px;
+	-webkit-border-radius: 8px 7px 7px 8px/8px 8px 7px 7px;
+	-moz-border-radius: 8px 7px 7px 8px/8px 8px 7px 7px;
+	border-radius: 8px 7px 7px 8px/8px 8px 7px 7px;
+	background-color: #fff;
+	border: solid 1px #a4aeb1;
+}	
+
+.catalog-list-04 li {
 	text-align: center;
 }
-.content section .card{
-	margin-bottom: 25px;
+
+.imgcentr{
+	padding-top: 3px;
 }
-.content section .card:last-child{
-	margin-bottom: 0;
-}
-.content section .card .name{
+
+.brandname{
+	font: bold 15px Lucida ;
 	color: #206988;
-	font: 15px "Lucida Sans Unicode", Arial, sans-serif;
-	line-height: 10px;
 }
-.content section .card .model{
+
+.typewhel{
+	font: 13px Lucida ;
 	color: #1f2528;
-	font: 13px "Lucida Sans Unicode", Arial, sans-serif;
 }
-.content section .card .price{
+
+.price{
+	font: bold italic 16px Arial; 
 	color: #114165;
-	font: italic bold 12px Arial, sans-serif;
+	margin-top: 5px;
 }
-.content section .card .price span{
-	font-size: 16px;
+
+.catalog-list-04 li{
+	margin-bottom: 30px;
+	margin-right: 14px;
 }
-.content section .card a{
-	display: block;
-	width: 138px;
-	height: 128px;
-	border: 1px solid #a7b1b4;
-	border-radius: 10px;
-	background: #fff url(../images/wheels.png) 30px 4px no-repeat;
+
+.catalog-list-04 li a{
+	text-decoration: none;
+	color: #206988;
 }
-.content section .nokian .card a{
-	background-position: -103px 4px;
-}
-.content section .hankook .card a{
-	background-position: -223px 4px;
-}
+
 .content .brand_names{
-	width: 704px;
-	margin: 43px auto 20px;
+	width: 680px;
+	margin: 38px auto 20px;
 }
 .content .brand_names a{
 	display: inline-block;
 	height: 27px;
-	background: url(../images/brands.png) no-repeat;
+	background: url(../img/brands.png) no-repeat;
 }
 .content .brand_names a:hover{
-	background: url(../images/brands_hover.png) no-repeat;
+	background: url(../img/brands_hover.png) no-repeat;
 }
 .content .brand_names a:first-child{
 	width: 83px;
-	margin-right: 22px;
+	margin-right: 8px;
 }
 .content .brand_names a:nth-child(2){
 	width: 97px;
-	margin-right: 13px;
+	margin-right: 9px;
 	background-position: -95px 0;
 }
 .content .brand_names a:nth-child(3){
 	width: 77px;
-	margin-right: 6px;
+	margin-right: 11px;
 	background-position: -205px 0;
 }
 .content .brand_names a:nth-child(4){
 	width: 59px;
-	margin-right: 13px;
+	margin-right: 9px;
 	background-position: -297px 0;
 }
 .content .brand_names a:nth-child(5){
 	width: 76px;
-	margin-right: 7px;
+	margin-right: 9px;
 	background-position: -369px 0;
 }
 .content .brand_names a:nth-child(6){
 	width: 57px;
-	margin-right: 1px;
+	margin-right: 9px;
 	background-position: -458px 0;
 }
 .content .brand_names a:nth-child(7){
 	width: 61px;
-	margin-right: 15px;
+	margin-right: 10px;
 	background-position: -528px 0;
 }
 .content .brand_names a:last-child{
@@ -582,14 +697,13 @@ footer{
 }
 footer ul{
 	width: 316px;
-	margin: 12px auto 17px;
+	margin: 12px auto 13px;
 	font-size: 0;
 }
 footer ul li{
 	display: inline-block;
 }
 footer li a{
-	padding: 0 12px;
 	border-left: 1px solid #8d989f;
 	border-right: 1px solid #7a878f;
 	color: #bec6c9;
@@ -598,8 +712,16 @@ footer li a{
 }
 footer li:first-child a{
 	border-left: none;
+	padding: 0 14px 0 13px;
+}
+footer li:nth-child(2) a{
+	padding: 0 13px 0 12px;
+}
+footer li:nth-child(3) a{
+	padding: 0 12px 0 13px;
 }
 footer li:last-child a{
+	padding-left: 17px;
 	border-right: none;
 }
 footer li a:hover{
