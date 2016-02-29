@@ -55,7 +55,7 @@ header .navi a.mail{
 }
 header .login{
 	position: relative;
-	width: 495px;
+	width: 503px;
 	margin: 0 100px 0 314px;
 	padding: 4px 10px 4px 25px;
 	border-radius: 5px;
@@ -168,15 +168,9 @@ header nav .basket{
 	color: #929b9f;
 	font: 11px/32px Arial, sans-serif;
 }
-header nav .basket:before{
-	content: '';
-	position: absolute;
-	top: 7px;
-	left: -24px;
+.basket__img{
 	display: inline-block;
-	width: 21px;
-	height: 17px;
-	background: url(../img/icons.png) -59px -27px no-repeat;
+	vertical-align: middle;
 }
 header nav .basket .product{
 	margin: 0 13px 0 5px;
@@ -565,7 +559,7 @@ header nav .basket .blue{
 }
 .content section{
 	margin: 0 192px 0 192px;
-	padding: 19px 0px 28px 22px;
+	padding: 19px 0px 0 22px;
 	background: linear-gradient(to bottom, #e5e7e8, #93a7b0);
 	border-radius: 3px;
 }
@@ -696,7 +690,7 @@ footer{
 	background: #213a4d;
 }
 footer ul{
-	width: 316px;
+	width: 321px;
 	margin: 12px auto 13px;
 	font-size: 0;
 }
