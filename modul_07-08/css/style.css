@@ -1,4 +1,26 @@
-@font-face{
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../font/leaguegothic-regular-webfont.eot');
+  src: url('../font/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../font/opensans-light-webfont.eot');
+  src: url('../font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff'), url('../fonts/opensans-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/opensans-extrabold-webfont.eot');
+  src: url('../font/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'), url('../fonts/opensans-extrabold-webfont.woff') format('woff'), url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*@font-face{
 	font-family: "League Gothic";
 	src: url("../font/league-gothic.regular.ttf");
 }
@@ -11,7 +33,7 @@
 @font-face {
 	font-family:"Open Sans ExtraBold";
 	src:url(../font/OpenSans-ExtraBold.ttf);
-}
+}*/
 
 body{
 	background: #ccc;
@@ -1038,7 +1060,7 @@ footer{
 
 	header .dots{
 		left: 43%;
-		top: 80%;
+		top: 70%;
 	}
 	
 	.arrow__item{
@@ -1319,7 +1341,7 @@ footer{
 	
 	.first-screen article{
 		position: absolute;
-		top:17%;
+		top: 50%;
 		left: 51%;
 		transform: translate(-50%);
 	}
