@@ -171,8 +171,10 @@ a{
 	width: 100%;
 	padding-top: 76px;
 	padding-bottom: 29px;
-	background: url('../img/background-ie.png') repeat-x;
+	/*background: url('../img/background-ie.png') repeat-x;*/
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#745083', endColorstr='#322539',GradientType=0);
+/*	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#745083, endColorstr=#322539)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)";*/
 }
 
 	.article__purple-block{
