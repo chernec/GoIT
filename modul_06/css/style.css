@@ -470,10 +470,10 @@ header nav .basket .blue{
 	line-height: 28px;
 	text-transform: uppercase;
 }
-.catalog .sections p:nth-child(6){
+.catalog p:nth-child(6){
 	margin: -2px 31px 2px 0;
 }
-.catalog .sections p:nth-child(11){
+.catalog p:nth-child(11){
 	margin: -3px 31px 2px 0;
 }
 .brand form p{
@@ -519,44 +519,7 @@ header nav .basket .blue{
 .brand form p:nth-child(8):before{
 	left: 1px;
 }
-.catalog .sections a{
-	position: relative;
-	display: inline-block;
-	margin: 0 0 6px 46px;
-	color: #465961;
-	font: 13px "Lucida Sans Unicode", Arial, sans-serif;
-	text-decoration: none;
-}
-.catalog .sections a:nth-child(5),
-.catalog .sections a:nth-child(10),
-.catalog .sections a:nth-child(15){
-	margin-bottom: 0;
-}
-.catalog .sections a:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: -10px;
-	width: 4px;
-	height: 4px;
-	border: 2px solid #79878d;
-	border-radius: 50%;
-}
-.catalog .sections a:hover{
-	margin-bottom: 9px;
-	color: #0c3256;
-	font: italic bold 14px Arial, sans-serif;
-	text-decoration: underline;
-}
-.catalog .sections a:hover:before{
-	border-color: #313a55;
-}
-.catalog .sections a:nth-child(5):hover,
-.catalog .sections a:nth-child(10):hover,
-.catalog .sections a:nth-child(15):hover{
-	margin-bottom: 3px;
-}
+
 .content section{
 	margin: 0 192px 0 192px;
 	padding: 19px 0px 0 22px;
@@ -571,7 +534,6 @@ header nav .basket .blue{
 }
 .content section>.catalog-list-04{
 	float: left;
-	/*width: 138px;*/
 	margin-left: 0px;
 	}
 
@@ -586,7 +548,6 @@ header nav .basket .blue{
 	min-width: 100px;
 	max-width: 300px;
 	}
-
 .white{
 	width: 137px;
 	height: 127px;
@@ -725,4 +686,27 @@ footer p{
 	text-align: center;
 	color: #7f4740;
 	font: 10px Arial, sans-serif;
+}
+
+.bus__link{
+	line-height: 25px;
+	text-decoration: none;
+	margin-left: 35px;
+	font-size: 13px;
+	color: #465961;
+}
+
+.bus__link:before{
+    content: "\25cb";
+    display: inline-block;
+    width: 15px;
+    color: #465961;
+}
+
+.bus__link:hover{
+	text-decoration: underline;
+	color: #0c3256;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
 }
